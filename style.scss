@@ -206,6 +206,11 @@ main {
           outline: none;
           padding: 0.7rem 1rem;
           border-radius: 0.5rem;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+        }
+        button:hover{
+          background-color: #f9e167
         }
       }
     }
@@ -227,7 +232,7 @@ main {
           opacity: 0.4;
         }
         h2 {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 300;
         }
       }
@@ -253,7 +258,7 @@ main {
       .text {
         @include flex-column(2rem);
         h1 {
-          font-size: 5rem;
+          font-size: 4rem;
           line-height: 1;
         }
         p {
@@ -287,11 +292,11 @@ main {
       .text {
         @include flex-column(2rem);
         h1 {
-          font-size: 5rem;
+          font-size: 4rem;
           line-height: 1;
         }
         p {
-          font-size: 1.5 rem;
+          font-size: 1.5rem;
           opacity: 0.7;
         }
       }
@@ -317,9 +322,9 @@ main {
       padding: 2rem;
       .icon,
       .bottom {
-        background-color: rgb(187, 187, 187, 0.375);
-        backdrop-filter: blur(5px);
-        border: 1px solid white;
+        background-color: rgba(153, 153, 153, 0.175);
+        backdrop-filter: blur(2px);
+        border: 1px solid rgba(205, 204, 204, 0.395);
         border-radius: 0.7rem;
         padding: 0.5rem;
       }
@@ -331,7 +336,7 @@ main {
       .icon {
         width: fit-content;
         border-radius: 50%;
-        padding: 0.4rem;
+        padding: 0.4rem 0.6rem;
         font-size: 1.2rem;
       }
       .bottom {
@@ -357,7 +362,7 @@ main {
     .bottom {
       @include flex-column(1rem);
       .text {
-        @include flex-column(6rem);
+        @include flex-column(4rem);
       }
     }
   }
@@ -373,9 +378,10 @@ main {
       p {
         color: #1b1b1a;
         font-size: 1.2rem;
+        margin-bottom:2rem ;
       }
       h2 {
-        font-size: 6rem;
+        font-size: 4rem;
         line-height: 1;
         color: #121212;
       }
@@ -387,6 +393,17 @@ main {
         width: 100%;
         font-size: 1rem;
         height: fit-content;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      button:hover{
+        background-color: #f9e167;
+        border: 1px solid#121212;
+      }
+      button:hover,p{
+        color: #121212;
       }
     }
   }
