@@ -27,7 +27,7 @@ body {
   background-color: #121212;
 }
 
-section {
+section, nav {
   max-width: 2000px;
 }
 
